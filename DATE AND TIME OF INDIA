@@ -1,0 +1,8 @@
+from datetime import datetime
+import pytz
+
+location = pytz.timezone("Asia/KOLKATA")
+
+time = datetime.now(location)
+
+print("Current Time:", time.strftime("%H:%M:%S"))
