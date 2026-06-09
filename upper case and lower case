@@ -1,0 +1,17 @@
+up = 0
+lw = 0
+
+while True:
+    char = input("Enter a character: ")
+
+    if char in "!@#$%^&*()_+aeiouAEIOU":
+        break
+
+    if char.isupper():
+        up += 1
+
+    elif char.islower():
+        lw += 1
+
+print("Total number of uppercase:", up)
+print("Total number of lowercase:", lw)
