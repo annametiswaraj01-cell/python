@@ -1,0 +1,15 @@
+a = [[" " for j in range(11)] for i in range(10)]
+
+for i in range(10):
+    for j in range(11):
+    
+        if j == 0 or j == 10:
+            a[i][j] = "*"
+        
+        elif i == j and j <= 5:
+            a[i][j] = "*"
+
+        elif i + j == 10 and j >= 5:
+            a[i][j] = "*"
+for row in a:
+    print(" ".join(row))
