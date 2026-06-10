@@ -1,0 +1,7 @@
+n = ["dhoni", "sakshi", "suri", "vaibhav"]
+
+marks = [[22, 20, 24], [22, 25, 26], [22, 20, 22], [22, 20, 23]]
+
+for i in range(len(n)):
+    avg = sum(marks[i]) // 3
+    print(f"{n[i]} : {avg}")
