@@ -1,0 +1,7 @@
+n = ["peddi achiamma", "peddi", "appaya suri", "komaraiah"]
+age = [35, 40, 55, 60]
+res = list(zip(age, n))
+res1 = sorted(res, reverse=True)
+for i in range(len(res1)):
+   
+    print("rank{}:{}-{} yrs old".format(i + 1, res1[i][1], res1[i][0]))
